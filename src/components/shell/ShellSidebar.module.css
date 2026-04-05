@@ -1,0 +1,202 @@
+.panel {
+  min-height: 100vh;
+  padding: 1.35rem 1rem 1.15rem;
+  background: linear-gradient(180deg, #0b3a2a 0%, #0a3426 100%);
+  color: #dbefe5;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: 1.2rem;
+  position: sticky;
+  top: 0;
+  overflow: auto;
+}
+
+.brandBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.brandMark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #42b27b;
+  color: #f6fff9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brandName {
+  color: #fff8ef;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.iconSvg {
+  width: 18px;
+  height: 18px;
+}
+
+.patientCard {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 0.95rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.patientName {
+  color: #ffffff;
+  font-size: 0.98rem;
+}
+
+.patientDetails {
+  color: #7ee0b0;
+  font-size: 0.85rem;
+}
+
+.section {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.sectionLabel {
+  margin: 0;
+  color: #4ca379;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.link {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.72rem 0.8rem;
+  background: transparent;
+  color: #8ce6bd;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.link:hover,
+.link:focus-visible {
+  background: rgba(255, 255, 255, 0.06);
+  color: #effaf3;
+  transform: translateX(1px);
+}
+
+.activeLink {
+  background: rgba(66, 178, 123, 0.24);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.disabledLink {
+  opacity: 0.82;
+  cursor: default;
+}
+
+.disabledLink:hover,
+.disabledLink:focus-visible {
+  transform: none;
+}
+
+.linkIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkLabel {
+  min-width: 0;
+}
+
+.alertBadge {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  padding: 0 0.45rem;
+  background: #f47645;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.sidebarFooter {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.userIdentity {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #3ec288;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.userMeta {
+  display: grid;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.userName {
+  color: #f7fff9;
+  font-size: 0.92rem;
+}
+
+.userStatus {
+  color: #73c39b;
+  font-size: 0.8rem;
+}
+
+.authButton {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #eefbf4;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.7rem 0.85rem;
+}
+
+@media (max-width: 960px) {
+  .panel {
+    min-height: auto;
+    position: static;
+  }
+}
