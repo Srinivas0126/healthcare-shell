@@ -1,0 +1,94 @@
+.bar {
+  border: 1px solid rgba(22, 48, 66, 0.08);
+  border-radius: 24px;
+  padding: 1rem 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(243, 248, 251, 0.92)),
+    radial-gradient(circle at bottom right, rgba(24, 151, 168, 0.12), transparent 36%);
+  box-shadow: 0 22px 50px rgba(17, 44, 60, 0.08);
+  backdrop-filter: blur(14px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  color: #49677c;
+}
+
+.identityBlock,
+.metaBlock {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #537388;
+  font-size: 0.77rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.productName {
+  color: #173042;
+  font-size: 1rem;
+}
+
+.caption {
+  margin: 0;
+  color: #456378;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.metaBlock {
+  justify-items: end;
+}
+
+.pillRow,
+.linkRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pill {
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #0f7092;
+  background: rgba(15, 112, 146, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.link {
+  color: #173042;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.35rem 0.1rem;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: #0f7092;
+}
+
+@media (max-width: 960px) {
+  .bar {
+    grid-template-columns: 1fr;
+  }
+
+  .metaBlock {
+    justify-items: start;
+  }
+
+  .pillRow,
+  .linkRow {
+    justify-content: flex-start;
+  }
+}

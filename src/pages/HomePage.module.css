@@ -1,0 +1,133 @@
+.heroPanel,
+.contentCard,
+.contentPanel {
+  border: 1px solid rgba(22, 48, 66, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 22px 50px rgba(17, 44, 60, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(15, 112, 146, 0.1);
+  color: #0f7092;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heroPanel {
+  border-radius: 32px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.9fr);
+  gap: 1.25rem;
+}
+
+.heroTitle,
+.roadmapTitle {
+  margin: 0.35rem 0 0;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.heroText,
+.cardText,
+.metricText,
+.roadmapList {
+  margin: 0;
+  color: #49677c;
+  line-height: 1.6;
+}
+
+.quickLinkRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.quickLink {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  background: rgba(15, 112, 146, 0.08);
+  color: #145872;
+  font-weight: 700;
+}
+
+.quickLink:hover {
+  background: rgba(15, 112, 146, 0.14);
+}
+
+.metricCard {
+  border-radius: 26px;
+  padding: 1.5rem;
+  background: linear-gradient(160deg, rgba(15, 109, 141, 0.12), rgba(24, 151, 168, 0.06));
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+}
+
+.metricValue {
+  color: #0d647f;
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.metricLabel {
+  color: #173042;
+  font-weight: 700;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contentCard {
+  border-radius: 28px;
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.contentPanel {
+  border-radius: 28px;
+  padding: 2rem;
+}
+
+.roadmapPanel {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.roadmapList {
+  padding-left: 1.25rem;
+}
+
+.roadmapList li + li {
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 960px) {
+  .heroPanel {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
